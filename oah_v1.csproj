@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B020C887-39B3-44BC-9249-91EF61BF3E7D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>oah_v1</RootNamespace>
+    <AssemblyName>oah_v1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aboutus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboutus.Designer.cs">
+      <DependentUpon>aboutus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adda.Designer.cs">
+      <DependentUpon>adda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_loginp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_loginp.Designer.cs">
+      <DependentUpon>admin_loginp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alogin.Designer.cs">
+      <DependentUpon>alogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deletea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletea.Designer.cs">
+      <DependentUpon>deletea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="donation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="donation.Designer.cs">
+      <DependentUpon>donation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="expenditure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="expenditure.Designer.cs">
+      <DependentUpon>expenditure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mpage.Designer.cs">
+      <DependentUpon>mpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifya.Designer.cs">
+      <DependentUpon>modifya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="oldv1DataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>oldv1DataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="resi_display.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resi_display.Designer.cs">
+      <DependentUpon>resi_display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vol_display.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vol_display.Designer.cs">
+      <DependentUpon>vol_display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="welcome_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcome_page.Designer.cs">
+      <DependentUpon>welcome_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_page.Designer.cs">
+      <DependentUpon>login_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="aboutus.resx">
+      <DependentUpon>aboutus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adda.resx">
+      <DependentUpon>adda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_loginp.resx">
+      <DependentUpon>admin_loginp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alogin.resx">
+      <DependentUpon>alogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletea.resx">
+      <DependentUpon>deletea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="donation.resx">
+      <DependentUpon>donation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="expenditure.resx">
+      <DependentUpon>expenditure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_page.resx">
+      <DependentUpon>login_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mpage.resx">
+      <DependentUpon>mpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifya.resx">
+      <DependentUpon>modifya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="resi_display.resx">
+      <DependentUpon>resi_display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vol_display.resx">
+      <DependentUpon>vol_display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcome_page.resx">
+      <DependentUpon>welcome_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="oldv1DataSet.xsc">
+      <DependentUpon>oldv1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet.xss">
+      <DependentUpon>oldv1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet1.xsc">
+      <DependentUpon>oldv1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet1.xss">
+      <DependentUpon>oldv1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet10.xsc">
+      <DependentUpon>oldv1DataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet10.xss">
+      <DependentUpon>oldv1DataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet11.xsc">
+      <DependentUpon>oldv1DataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet11.xss">
+      <DependentUpon>oldv1DataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet12.xsc">
+      <DependentUpon>oldv1DataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet12.xss">
+      <DependentUpon>oldv1DataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet13.xsc">
+      <DependentUpon>oldv1DataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet13.xss">
+      <DependentUpon>oldv1DataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet14.xsc">
+      <DependentUpon>oldv1DataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet14.xss">
+      <DependentUpon>oldv1DataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet15.xsc">
+      <DependentUpon>oldv1DataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet15.xss">
+      <DependentUpon>oldv1DataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet16.xsc">
+      <DependentUpon>oldv1DataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet16.xss">
+      <DependentUpon>oldv1DataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet17.xsc">
+      <DependentUpon>oldv1DataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet17.xss">
+      <DependentUpon>oldv1DataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet18.xsc">
+      <DependentUpon>oldv1DataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet18.xss">
+      <DependentUpon>oldv1DataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet19.xsc">
+      <DependentUpon>oldv1DataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet19.xss">
+      <DependentUpon>oldv1DataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet2.xsc">
+      <DependentUpon>oldv1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet2.xss">
+      <DependentUpon>oldv1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet20.xsc">
+      <DependentUpon>oldv1DataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet20.xss">
+      <DependentUpon>oldv1DataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet21.xsc">
+      <DependentUpon>oldv1DataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet21.xss">
+      <DependentUpon>oldv1DataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet22.xsc">
+      <DependentUpon>oldv1DataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet22.xss">
+      <DependentUpon>oldv1DataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet23.xsc">
+      <DependentUpon>oldv1DataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet23.xss">
+      <DependentUpon>oldv1DataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet24.xsc">
+      <DependentUpon>oldv1DataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet24.xss">
+      <DependentUpon>oldv1DataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet25.xsc">
+      <DependentUpon>oldv1DataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet25.xss">
+      <DependentUpon>oldv1DataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet3.xsc">
+      <DependentUpon>oldv1DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet3.xss">
+      <DependentUpon>oldv1DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet4.xsc">
+      <DependentUpon>oldv1DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet4.xss">
+      <DependentUpon>oldv1DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet5.xsc">
+      <DependentUpon>oldv1DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet5.xss">
+      <DependentUpon>oldv1DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet6.xsc">
+      <DependentUpon>oldv1DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet6.xss">
+      <DependentUpon>oldv1DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet7.xsc">
+      <DependentUpon>oldv1DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet7.xss">
+      <DependentUpon>oldv1DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet8.xsc">
+      <DependentUpon>oldv1DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet8.xss">
+      <DependentUpon>oldv1DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet9.xsc">
+      <DependentUpon>oldv1DataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="oldv1DataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>oldv1DataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="oldv1DataSet9.xss">
+      <DependentUpon>oldv1DataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Admin-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Login-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Administrator-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="user-add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="user-delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hp-customization-control-panel-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="old_age.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="oldv11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DEL3.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
